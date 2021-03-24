@@ -1,13 +1,12 @@
+import React from 'react';
+
 import './App.css';
+import {UrlForm} from './components/urlForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          React URl Shortner
-        </p>
-      </header>
+      <UrlForm />
     </div>
   );
 }

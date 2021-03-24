@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {ShortenUrlProvider} from 'react-shorten-url';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ShortenUrlProvider config={{ accessToken: '31c6cbd568cf590ab4a488dcec5ffdce4b3d37c8' }}>
+      <App />
+    </ShortenUrlProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
